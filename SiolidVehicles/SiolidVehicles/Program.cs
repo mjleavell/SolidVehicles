@@ -19,9 +19,11 @@ public partial class Program
         airVehicles.Add(cessna);
         airVehicles.Add(heli);
 
-
         // With a single `foreach`, have each vehicle Fly()
-
+        foreach (var airVehicle in airVehicles)
+        {
+            airVehicle.Fly();
+        }
 
         // Build a collection of all vehicles that operate on roads
         var landVehicles = new List<ILandVehicle>();
@@ -33,8 +35,10 @@ public partial class Program
         landVehicles.Add(motorcycle);
 
         // With a single `foreach`, have each road vehicle Drive()
-
-
+        foreach (var landVehicle in landVehicles)
+        {
+            landVehicle.Drive();
+        }
 
         // Build a collection of all vehicles that operate on water
         var waterVehicles = new List<IWaterVehicle>();
@@ -46,6 +50,12 @@ public partial class Program
         waterVehicles.Add(cruiseShip);
 
         // With a single `foreach`, have each water vehicle Drive()
+        foreach (var waterVehicle in waterVehicles)
+        {
+            waterVehicle.Drive();
+        }
+
+        Console.ReadLine();
     }
 
 
