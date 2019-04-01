@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SolidVehicles.Vehicles
 {
-    public class Helicopter : IVehicle
+    public class Helicopter : IVehicle, IAirVehicle
     {
         public int Wheels { get; set; } = 0;
         public int Doors { get; set; } = 2;

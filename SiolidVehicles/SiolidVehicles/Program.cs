@@ -6,37 +6,6 @@ using System.Linq;
 
 public partial class Program
 {
-
-    public class AirVehicleRepository
-    {
-        public List<IAirVehicle> _airVehicles = new List<IAirVehicle>();
-
-        public AirVehicleRepository()
-        {
-            _airVehicles = new List<IAirVehicle>();
-        }
-    }
-
-    public class LandVehicleRepository
-    {
-        public List<ILandVehicle> _landVehicles = new List<ILandVehicle>();
-
-        public LandVehicleRepository()
-        {
-            _landVehicles = new List<ILandVehicle>();
-        }
-    }
-
-    public class WaterVehicleRepository
-    {
-        public List<IWaterVehicle> _waterVehicles = new List<IWaterVehicle>();
-
-        public WaterVehicleRepository()
-        {
-            _waterVehicles = new List<IWaterVehicle>();
-        }
-    }
-
     public static void Main()
     {
         // Build a collection of all vehicles that fly
@@ -47,6 +16,9 @@ public partial class Program
         var heli = new Helicopter();
 
         airVehicles.Add(airplane);
+        airVehicles.Add(cessna);
+        airVehicles.Add(heli);
+
 
         // With a single `foreach`, have each vehicle Fly()
 
