@@ -40,8 +40,10 @@ public partial class Program
         var waterVehicles = new List<IWaterVehicle>();
 
         var jetSki = new JetSki();
+        var cruiseShip = new Ship();
 
         waterVehicles.Add(jetSki);
+        waterVehicles.Add(cruiseShip);
 
         // With a single `foreach`, have each water vehicle Drive()
     }
