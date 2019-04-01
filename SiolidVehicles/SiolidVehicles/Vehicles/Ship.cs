@@ -5,21 +5,21 @@ using System.Text;
 
 namespace SolidVehicles.Vehicles
 {
-    public class JetSki : IVehicle, IWaterVehicle
+    public class Ship : IVehicle, IWaterVehicle
     {
         public int Wheels { get; set; }
-        public int Doors { get; set; } = 0;
-        public int PassengerCapacity { get; set; } = 2;
+        public int Doors { get; set; } = 4;
+        public int PassengerCapacity { get; set; } = 5020;
         public bool Winged { get; set; } = false;
         public string TransmissionType { get; set; } = "Manual";
-        public double EngineVolume { get; set; } = 1.5;
-        public double MaxWaterSpeed { get; set; } = 33.5;
+        public double EngineVolume { get; set; } = 500000;
+        public double MaxWaterSpeed { get; set; } = 25.9;
         public double MaxLandSpeed { get; set; }
         public double MaxAirSpeed { get; set; }
 
         public void Drive()
         {
-            Console.WriteLine("The jetski zips through the waves with the greatest of ease");
+            Console.WriteLine("The Adventure of the Seas is a massive Royal Caribbean cruise ship");
         }
 
         public void Fly()

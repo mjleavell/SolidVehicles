@@ -24,12 +24,24 @@ public partial class Program
 
 
         // Build a collection of all vehicles that operate on roads
+        var landVehicles = new List<ILandVehicle>();
+
+        var car = new Car();
+        var motorcycle = new Motorcycle();
+
+        landVehicles.Add(car);
+        landVehicles.Add(motorcycle);
 
         // With a single `foreach`, have each road vehicle Drive()
 
 
 
         // Build a collection of all vehicles that operate on water
+        var waterVehicles = new List<IWaterVehicle>();
+
+        var jetSki = new JetSki();
+
+        waterVehicles.Add(jetSki);
 
         // With a single `foreach`, have each water vehicle Drive()
     }
