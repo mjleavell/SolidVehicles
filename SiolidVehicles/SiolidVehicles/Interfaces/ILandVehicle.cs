@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SolidVehicles.Interfaces
 {
-    public interface ILandVehicle
+    public interface ILandVehicle : IVehicle
     {
         // an int property called Wheels
         int Wheels { get; set; }

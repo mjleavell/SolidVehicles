@@ -13,6 +13,15 @@ namespace SolidVehicles.Data
         {
             _airVehicles = new List<IAirVehicle>();
         }
+
+        //public IAirVehicle AddAirVehicle()
+        //{
+        //    var newAirVehicle = new IAirVehicle();
+
+        //    _airVehicles.Add(newAirVehicle);
+
+        //    return newAirVehicle;
+        //}
     }
 
 }

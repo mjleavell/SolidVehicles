@@ -6,11 +6,12 @@ using System.Linq;
 
 public partial class Program
 {
+
     public static void Main()
     {
         // Build a collection of all vehicles that fly
         var airVehicles = new List<IAirVehicle>();
-
+ 
         var airplane = new Airplane();
         var cessna = new Cessna();
         var heli = new Helicopter();
@@ -57,7 +58,4 @@ public partial class Program
 
         Console.ReadLine();
     }
-
-
-
 }
