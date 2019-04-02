@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SolidVehicles.Interfaces
 {
-    public interface IWaterVehicle
+    public interface IWaterVehicle : IVehicle
     {
         // a double property called MaxWaterSpeed 
         double MaxWaterSpeed { get; set; }
